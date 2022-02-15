@@ -1,0 +1,9 @@
+newprog : new.o utility.o
+	gcc -o newprog new.o utility.o
+new.o : new.c utility.h
+	gcc -c -g new.c
+utility.o : utility.c utility.o
+	gcc -c -g utility.c
+clean :
+	rm -f newprog.exe new.o utility.o
+

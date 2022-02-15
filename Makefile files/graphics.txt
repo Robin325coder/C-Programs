@@ -1,0 +1,24 @@
+#makefile for graphics programs
+
+CC=g++  #compiler
+
+cir:
+	$(CC) cir.cpp -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -o cir
+
+line:
+	$(CC) line.cpp -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -o line
+
+ellip:
+	$(CC) ellip.cpp -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -o ellip
+
+rect:
+	$(CC) rect.cpp -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -o rect
+
+bar:
+	$(CC) bar.cpp -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -o bar
+
+windo:
+	$(CC) windo.cpp -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -o windo
+
+windo2:
+	$(CC) windo2.cpp -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -o windo2
